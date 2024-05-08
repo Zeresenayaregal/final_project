@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+.me {
+  border-radius: 30px;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+.me {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
