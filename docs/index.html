@@ -1,496 +1,340 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zeresenay Yaregal, Portfolio</title>
-    <!-- Tailwind css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!--- Google fonts -->
-    <!-- Owl carousel -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
-  </head>
-  <body class="bg-dark">
-    <header class="bg-dark">
-      <!-- nav bar -->
-      <nav class="py-2">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between items-center h-16">
-            <!-- logo -->
-            <div class="flex-shrink-0 flex items-center">
-              <span class="text-white text-2xl font-bold"
-                >Zeresenay<span class="text-primary">.</span></span
-              >
-            </div>
-            <!-- page nav link-->
-            <div class="hidden sm:block ml-auto">
-              <div class="ml-10 felx items-baseline space-x-4">
-                <a
-                  href="#"
-                  class="text-white hover:underline px-3 py-2 text-sm font-medium"
-                  >Home</a
-                >
-                <a
-                  href="#work"
-                  class="text-white hover:underline px-3 py-2 text-sm font-medium"
-                  >Projects</a
-                >
-                <a
-                  href="#about"
-                  class="text-white hover:underline px-3 py-2 text-sm font-medium"
-                  >About me</a
-                >
-                <a
-                  href="#contact"
-                  class="text-white border border-primary px-4 rounded-none py-2.5 text-sm font-medium animate-bounce hover:bg-primary"
-                  >Contact Me</a
-                >
-              </div>
-            </div>
-            <!-- responsive menu button -->
-            <div class="sm:hidden flex items-center">
-              <button
-                id="mobile-menu-btn"
-                type="button"
-                class="text-white hover:text-light-gray outline-none focus:outline-none focus:text-light-gray"
-                aria-label="Toggle menu"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div id="mobile-menu" class="hidden sm:hidden">
-          <div class="px-2 pt-2 pb-2 space-y-1">
-            <a
-              href="#"
-              class="text-white hover:underline block px-3 py-2 text-base font-medium"
-              >Home</a
-            >
-            <a
-              href="#work"
-              class="text-white hover:underline block px-3 py-2 text-base font-medium"
-              >Projects</a
-            >
-            <a
-              href="#about"
-              class="text-white hover:underline block px-3 py-2 text-base font-medium"
-              >About Me</a
-            >
-            <div class="px-2">
-              <a
-                href="#contact"
-                class="text-white border border-primary block px-3 py-2 rounded-none text-base font-medium hover:bg-primary focus:bg-primary mt-4"
-                >Contact Me</a
-              >
-            </div>
-          </div>
-        </div>
-      </nav>
-      <!-- nav ended -->
-    </header>
 
-    <!-- Hero -->
-    <section class="hero text-white pb-28 pt-9">
-      <div
-        class="container block max-w-6xl mx-auto sm:flex px-4 sm:px-6 lg:px-8"
-      >
-        <div>
-          <h4
-            class="text-2xl font-bold text-primary lg:leading-[94px] lg:text-[38px]"
-          >
-            Hello, I'm Zeresenay Yaregal
-          </h4>
-          <h1 class="text-5xl mt-3 font-bold lg:text-[55px] lg:leading-[94px]">
-            <span id="typed"></span>
-          </h1>
-          <p class="mt-9 text-gray-500 font-normal text-base w-full lg:w-3/6">
-            I originated from Addis Ababa, Ethiopia, I started to code when I
-            joined high school. Since then I have been working everyday till I
-            reach at my highest apogee. I have some experience on Web design,
-            Finance, UI/UX design. And I am on the way of being Software
-            Engineer.
-          </p>
-          <div class="mt-14">
-            <div class="mt-6 flex items-center gap-3">
-              <a
-                href="#mail"
-                class="btn-primary bg-primary text-white rounded-none px-6 py-3 text-lg font-medium mr-4 hover:scale-105"
-                >Email Me</a
-              >
-              <a
-                href="./Zeresenay_Yaregal_CV.pdf"
-                class="flex items-center text-gray-500 font-bold text-lg"
-                download
-                target="_blank"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 9.75v6.75m0 0-3-3m3 3 3-3m-8.25 6a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z"
-                  />
-                </svg>
-                <span class="ml-2 hover:underline">Download Resume</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="image w-full">
-          <img src="./img/meee.png" alt="Mio_pic" class="me animate-pulse" />
-        </div>
-      </div>
-    </section>
-    <!-- Hero ended -->
-    <!-- Work -->
-    <section id="work" class="work mt-28 py-28 bg-light-dark">
-      <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="block md:flex items-center justify-between">
-          <div>
-            <div class="flex items-center">
-              <hr class="w-14 border-t-2 border-primary mr-4" />
-              <h6 class="text-primary font-bold text-xl mr-4">
-                Recent Projects
-              </h6>
-            </div>
-            <h2
-              class="text-white text-3xl lg:text-5xl font-bold mb-2 md:w-3/4 mt-4"
-            >
-              Front-end projects
-            </h2>
-          </div>
-          <div class="mt-6 md:mt-0">
-            <a
-              href="#"
-              class="bg-primary text-white rounded-none py-3 px-6 text-lg font-medium"
-              >Projects</a
-            >
-          </div>
-        </div>
-        <div class="flex flex-wrap -mx-4 justify-between">
-          <div class="w-full md:w-1/2 px-4 mt-20">
-            <div class="relative">
-              <img src="./img/html.png" alt="HTML Project" class="w-full" />
-            </div>
-            <h5 class="text-[28px] font-semibold text-white mt-9">
-              HTML Project
-            </h5>
-            <p
-              class="mt-2 text-gray-500 font-normal text-base w-full lg:w-full"
-            >
-              "The little Taco shop" Project is a sleek and minimalist website
-              crafted entirely with HTML. With clean design and intuitive
-              navigation, it demonstrates the beauty of simplicity in web
-              development. Explore its content-rich pages, elegantly structured
-              without the use of JavaScript or CSS, showcasing the power of HTML
-              in creating engaging online experience
-            </p>
-            <a
-              href="https://github.com/AgapeCreed/CleverWhiteHorse_html.git"
-              class="flex items-center text-primary font-medium text-xl mt-2"
-              target="_blank"
-            >
-              <span class="mr-2 hover:underline">See project</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="w-full md:w-1/2 px-4 mt-20">
-            <div class="relative">
-              <img src="./img/css.png" alt="Css Project" class="w-full" />
-            </div>
-            <h5 class="text-[28px] font-semibold text-white mt-9">
-              CSS Project
-            </h5>
-            <p
-              class="mt-2 text-gray-500 font-normal text-base w-full lg:w-full"
-            >
-              "The little Taco shop(CSS-Version)" is a visually stunning website
-              created solely with Cascading Style Sheet(CSS). Experience sleek
-              design and seamless animations that showcase the versatility of
-              CSS in the web development. This project exemplifies the artistry
-              and innovation achievable through CSS styling alone.
-            </p>
-            <a
-              href="https://github.com/AgapeCreed/CleverWhiteHorse_css.git"
-              class="flex items-center text-primary font-medium text-xl mt-2"
-              target="_blank"
-            >
-              <span class="mr-2 hover:underline">See project</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="w-full md:w-1/2 px-4 mt-20">
-            <div class="relative">
-              <img
-                src="./img/tailwind_.png"
-                alt="Tailwind Project"
-                class="w-full"
-              />
-            </div>
-            <h5 class="text-[28px] font-semibold text-white mt-9">
-              Tailwind Project
-            </h5>
-            <p
-              class="mt-2 text-gray-500 font-normal text-base w-full lg:w-full"
-            >
-              Introducing Rocket Project: a sleek website built with Tailwind
-              CSS. Experience seamless navigation and stunning visuals across
-              all devices. With Tailwind's utility-first approach, I've created
-              a modern interface that's both stylish and responsive. Dive into
-              Rocket Project for a user-friendly experience like no other.
-            </p>
-            <a
-              href="https://github.com/AgapeCreed/CleverWhiteHorse_html.git"
-              class="flex items-center text-primary font-medium text-xl mt-2"
-              target="_blank"
-            >
-              <span class="mr-2 hover:underline">See project</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Work ended -->
-    <!-- About me started -->
-    <section id="about" class="about text-white mt-28 py-28 bg-light-dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeresenay Yaregal, Portfolio</title>
+  <!-- Tailwind css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!--- Google fonts -->
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+</head>
+
+<body class="bg-dark">
+  <header class="bg-dark">
+    <!-- nav bar -->
+    <nav class="py-2">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="block md:flex items-center justify-between">
-          <h2
-            class="text-white text-3xl lg:text-5xl font-bold mb-2 md:w-3/4 mt-4"
-          >
-            Who am I?
-          </h2>
-          <div class="mt-6 md:mt-0">
-            <a
-              href="#"
-              class="bg-primary text-white rounded-none py-3 px-6 text-lg font-medium"
-              >About Me</a
-            >
+        <div class="flex justify-between items-center h-16">
+          <!-- logo -->
+          <div class="flex-shrink-0 flex items-center">
+            <span class="text-white text-2xl font-bold">Zeresenay<span class="text-primary">.</span></span>
+          </div>
+          <!-- page nav link-->
+          <div class="hidden sm:block ml-auto">
+            <div class="ml-10 felx items-baseline space-x-4">
+              <a href="#" class="text-white hover:underline px-3 py-2 text-sm font-medium">Home</a>
+              <a href="#work" class="text-white hover:underline px-3 py-2 text-sm font-medium">Projects</a>
+              <a href="#about" class="text-white hover:underline px-3 py-2 text-sm font-medium">About me</a>
+              <a href="#contact"
+                class="text-white border border-primary px-4 rounded-none py-2.5 text-sm font-medium animate-bounce hover:bg-primary">Contact
+                Me</a>
+            </div>
+          </div>
+          <!-- responsive menu button -->
+          <div class="sm:hidden flex items-center">
+            <button id="mobile-menu-btn" type="button"
+              class="text-white hover:text-light-gray outline-none focus:outline-none focus:text-light-gray"
+              aria-label="Toggle menu">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
           </div>
         </div>
-        <p class="mt-9 text-gray-500 font-normal text-base w-full lg:w-full">
-          Greetings! I'm Zeresenay Yaregal, originally from Addis Ababa,
-          Ethiopia. Growing up, I attended "Science Shared Campus," an
-          environment brimming with like-minded individuals where programming
-          was revered as a cornerstone of education. This early exposure ignited
-          my passion for technology and inspired me to delve deeper into the
-          world of software engineering.
-          <br /><br />
-          Currently, I'm on an exciting journey of learning and growth. I'm
-          enrolled in the Software Engineering program at ALX, where I'm honing
-          my skills and knowledge in this dynamic field. Additionally, I'm
-          diving into the intricacies of full-stack development through
-          Directed, further expanding my expertise and capabilities.
-          <br /><br />
-          Beyond my academic pursuits, I'm a multifaceted individual with
-          diverse interests and hobbies. I'm an avid reader, particularly drawn
-          to non-fiction books, especially those in the realm of self-help and
-          personal development. In my spare time, I channel my creativity into
-          producing beats using FL Studio, immersing myself in the rhythmic
-          world of music production. And when I'm not lost in the melodies,
-          you'll often find me on the football field, indulging in my love for
-          the beautiful game of soccer.
-          <br /><br />
-          Driven by curiosity and a thirst for knowledge, I'm constantly seeking
-          new experiences and challenges that allow me to grow personally and
-          professionally. With a blend of technical acumen and creative flair,
-          I'm excited to continue exploring the vast possibilities that the
-          world of technology has to offer.
+      </div>
+      <div id="mobile-menu" class="hidden sm:hidden">
+        <div class="px-2 pt-2 pb-2 space-y-1">
+          <a href="#" class="text-white hover:underline block px-3 py-2 text-base font-medium">Home</a>
+          <a href="#work" class="text-white hover:underline block px-3 py-2 text-base font-medium">Projects</a>
+          <a href="#about" class="text-white hover:underline block px-3 py-2 text-base font-medium">About Me</a>
+          <div class="px-2">
+            <a href="#contact"
+              class="text-white border border-primary block px-3 py-2 rounded-none text-base font-medium hover:bg-primary focus:bg-primary mt-4">Contact
+              Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav ended -->
+  </header>
+
+  <!-- Hero -->
+  <section class="hero text-white pb-28 pt-9">
+    <div class="container block max-w-6xl mx-auto sm:flex px-4 sm:px-6 lg:px-8">
+      <div>
+        <h4 class="text-2xl font-bold text-primary lg:leading-[94px] lg:text-[38px]">
+          Hello, I'm Zeresenay Yaregal
+        </h4>
+        <h1 class="text-5xl mt-3 font-bold lg:text-[55px] lg:leading-[94px]">
+          <span id="typed"></span>
+        </h1>
+        <p class="mt-9 text-gray-500 font-normal text-base w-full lg:w-3/6">
+          I originated from Addis Ababa, Ethiopia, I started to code when I
+          joined high school. Since then I have been working everyday till I
+          reach at my highest apogee. I have some experience on Web design,
+          Finance, UI/UX design. And I am on the way of being Software
+          Engineer.
         </p>
-      </div>
-    </section>
-    <!-- About me ended -->
-    <!-- Contact Me -->
-    <section id="contact" class="contact mt-28 py-28 bg-deep-gray">
-      <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-6">
-        <div class="block md:flex items-center justify-between">
-          <div>
-            <h4 class="text-white text-3xl lg:text-[38px] font-bold mb-2">
-              Do you want to reach me out?
-            </h4>
-            <p class="text-gray-500 mt-4 md">
-              You can contact me for any reason you want. I accept suggestion
-              too.
-            </p>
-          </div>
-          <div class="mt-8 md:mt-0">
-            <a
-              href="#"
-              class="bg-primary text-white rounded-none py-3 px-6 text-lg font-medium"
-              >Contact Me</a
-            >
+        <div class="mt-14">
+          <div class="mt-6 flex items-center gap-3">
+            <a href="#mail"
+              class="btn-primary bg-primary text-white rounded-none px-6 py-3 text-lg font-medium mr-4 hover:scale-105">Email
+              Me</a>
+            <a href="./Zeresenay_Yaregal_CV.pdf" class="flex items-center text-gray-500 font-bold text-lg" download
+              target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 9.75v6.75m0 0-3-3m3 3 3-3m-8.25 6a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
+              </svg>
+              <span class="ml-2 hover:underline">Download Resume</span>
+            </a>
           </div>
         </div>
-        <br />
-        <div class="texarea">
-          <textarea
-            name="textarea"
-            id=""
-            cols="30"
-            rows="10"
-            class="min-w-full min-h-full py-2 px-4 md:w-auto sm:auto bg-dark border text-white border-primary hover:border-primary focus:border-primary"
-            placeholder="Type here..."
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          class="button text-white font-bold border py-2 px-4 border-primary hover:bg-primary hover:scale-110 rounded"
-        >
-          Submit
-        </button>
       </div>
-    </section>
-    <!-- Contact Me ended -->
-    <!-- footer -->
-    <footer>
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="md:flex justify-between items-start">
-          <span class="text-white text-[26px] font-bold"
-            >Zeresenay <span class="text-primary">.</span></span
-          >
-          <div
-            class="links w-full mt-10 md:mt-0 space-y-5 md:w-96 justify-between md:space-y-0 md:flex"
-          >
-            <div class="info">
-              <h6 class="text-xl text-white font-semibold mb-6">Information</h6>
-              <ul class="text-gray-500 space-y-3">
-                <li class="hover:underline"><a href="#">+251991157676</a></li>
-                <li class="hover:underline">
-                  <a href="https://mail.google.com" id="mail" target="_blank"
-                    >zeresenayyaregal4@gmail.com</a
-                  >
-                </li>
-                <li class="hover:underline">
-                  <a
-                    href="https://www.bing.com/maps?q=addis+ababa+map&FORM=HDRSC6"
-                    target="_blank"
-                    >Addis Ababa, Ethiopia</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="social">
-              <h6 class="text-xl text-white font-semibold mb-6">
-                Social Media
-              </h6>
-              <ul class="text-gray-500 space-y-3">
-                <li class="hover:underline">
-                  <a
-                    href="https://www.linkedin.com/in/zeresenay-yaregal-287aab2a2/"
-                    target="_blank"
-                    >Linkedin</a
-                  >
-                </li>
-                <li class="hover:underline">
-                  <a href="https://github.com/Zeresenayaregal" target="_blank"
-                    >GitHub</a
-                  >
-                </li>
-                <li class="hover:underline">
-                  <a href="https://twitter.com/Zeresenay_Y" target="_blank"
-                    >Twitter</a
-                  >
-                </li>
-              </ul>
-            </div>
+      <div class="image w-full">
+        <img src="./img/meee.png" alt="Mio_pic" class="me animate-pulse" />
+      </div>
+    </div>
+  </section>
+  <!-- Hero ended -->
+  <!-- Work -->
+  <section id="work" class="work mt-28 py-28 bg-light-dark">
+    <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="block md:flex items-center justify-between">
+        <div>
+          <div class="flex items-center">
+            <hr class="w-14 border-t-2 border-primary mr-4" />
+            <h6 class="text-primary font-bold text-xl mr-4">
+              Recent Projects
+            </h6>
+          </div>
+          <h2 class="text-white text-3xl lg:text-5xl font-bold mb-2 md:w-3/4 mt-4">
+            Front-end projects
+          </h2>
+        </div>
+        <div class="mt-6 md:mt-0">
+          <a href="#" class="bg-primary text-white rounded-none py-3 px-6 text-lg font-medium">Projects</a>
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-4 justify-between">
+        <div class="w-full md:w-1/2 px-4 mt-20">
+          <div class="relative">
+            <img src="./img/html.png" alt="HTML Project" class="w-full" />
+          </div>
+          <h5 class="text-[28px] font-semibold text-white mt-9">
+            HTML Project
+          </h5>
+          <p class="mt-2 text-gray-500 font-normal text-base w-full lg:w-full">
+            "The little Taco shop" Project is a sleek and minimalist website
+            crafted entirely with HTML. With clean design and intuitive
+            navigation, it demonstrates the beauty of simplicity in web
+            development. Explore its content-rich pages, elegantly structured
+            without the use of JavaScript or CSS, showcasing the power of HTML
+            in creating engaging online experience
+          </p>
+          <a href="https://github.com/AgapeCreed/CleverWhiteHorse_html.git"
+            class="flex items-center text-primary font-medium text-xl mt-2" target="_blank">
+            <span class="mr-2 hover:underline">See project</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </a>
+        </div>
+        <div class="w-full md:w-1/2 px-4 mt-20">
+          <div class="relative">
+            <img src="./img/css.png" alt="Css Project" class="w-full" />
+          </div>
+          <h5 class="text-[28px] font-semibold text-white mt-9">
+            CSS Project
+          </h5>
+          <p class="mt-2 text-gray-500 font-normal text-base w-full lg:w-full">
+            "The little Taco shop(CSS-Version)" is a visually stunning website
+            created solely with Cascading Style Sheet(CSS). Experience sleek
+            design and seamless animations that showcase the versatility of
+            CSS in the web development. This project exemplifies the artistry
+            and innovation achievable through CSS styling alone.
+          </p>
+          <a href="https://github.com/AgapeCreed/CleverWhiteHorse_css.git"
+            class="flex items-center text-primary font-medium text-xl mt-2" target="_blank">
+            <span class="mr-2 hover:underline">See project</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </a>
+        </div>
+        <div class="w-full md:w-1/2 px-4 mt-20">
+          <div class="relative">
+            <img src="./img/tailwind_.png" alt="Tailwind Project" class="w-full" />
+          </div>
+          <h5 class="text-[28px] font-semibold text-white mt-9">
+            Tailwind Project
+          </h5>
+          <p class="mt-2 text-gray-500 font-normal text-base w-full lg:w-full">
+            Introducing Rocket Project: a sleek website built with Tailwind
+            CSS. Experience seamless navigation and stunning visuals across
+            all devices. With Tailwind's utility-first approach, I've created
+            a modern interface that's both stylish and responsive. Dive into
+            Rocket Project for a user-friendly experience like no other.
+          </p>
+          <a href="https://github.com/AgapeCreed/CleverWhiteHorse_html.git"
+            class="flex items-center text-primary font-medium text-xl mt-2" target="_blank">
+            <span class="mr-2 hover:underline">See project</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Work ended -->
+  <!-- About me started -->
+  <section id="about" class="about text-white mt-28 py-28 bg-light-dark">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="block md:flex items-center justify-between">
+        <h2 class="text-white text-3xl lg:text-5xl font-bold mb-2 md:w-3/4 mt-4">
+          Who am I?
+        </h2>
+        <div class="mt-6 md:mt-0">
+          <a href="#" class="bg-primary text-white rounded-none py-3 px-6 text-lg font-medium">About Me</a>
+        </div>
+      </div>
+      <p class="mt-9 text-gray-500 font-normal text-base w-full lg:w-full">
+        Greetings! I'm Zeresenay Yaregal, originally from Addis Ababa,
+        Ethiopia. Growing up, I attended "Science Shared Campus," an
+        environment brimming with like-minded individuals where programming
+        was revered as a cornerstone of education. This early exposure ignited
+        my passion for technology and inspired me to delve deeper into the
+        world of software engineering.
+        <br /><br />
+        Currently, I'm on an exciting journey of learning and growth. I'm
+        enrolled in the Software Engineering program at ALX, where I'm honing
+        my skills and knowledge in this dynamic field. Additionally, I'm
+        diving into the intricacies of full-stack development through
+        Directed, further expanding my expertise and capabilities.
+        <br /><br />
+        Beyond my academic pursuits, I'm a multifaceted individual with
+        diverse interests and hobbies. I'm an avid reader, particularly drawn
+        to non-fiction books, especially those in the realm of self-help and
+        personal development. In my spare time, I channel my creativity into
+        producing beats using FL Studio, immersing myself in the rhythmic
+        world of music production. And when I'm not lost in the melodies,
+        you'll often find me on the football field, indulging in my love for
+        the beautiful game of soccer.
+        <br /><br />
+        Driven by curiosity and a thirst for knowledge, I'm constantly seeking
+        new experiences and challenges that allow me to grow personally and
+        professionally. With a blend of technical acumen and creative flair,
+        I'm excited to continue exploring the vast possibilities that the
+        world of technology has to offer.
+      </p>
+    </div>
+  </section>
+  <!-- About me ended -->
+  <!-- Contact Me -->
+  <section id="contact" class="contact mt-28 py-28 bg-deep-gray">
+    <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-6">
+      <div class="block md:flex items-center justify-between">
+        <div>
+          <h4 class="text-white text-3xl lg:text-[38px] font-bold mb-2">
+            Do you want to reach me out?
+          </h4>
+          <p class="text-gray-500 mt-4 md">
+            You can contact me for any reason you want. I accept suggestion
+            too.
+          </p>
+        </div>
+        <div class="mt-8 md:mt-0">
+          <a href="#" class="bg-primary text-white rounded-none py-3 px-6 text-lg font-medium">Contact Me</a>
+        </div>
+      </div>
+      <br />
+      <div class="texarea">
+        <textarea name="textarea" id="" cols="30" rows="10"
+          class="min-w-full min-h-full py-2 px-4 md:w-auto sm:auto bg-dark border text-white border-primary hover:border-primary focus:border-primary"
+          placeholder="Type here..."></textarea>
+      </div>
+      <button type="submit"
+        class="button text-white font-bold border py-2 px-4 border-primary hover:bg-primary hover:scale-110 rounded">
+        Submit
+      </button>
+    </div>
+  </section>
+  <!-- Contact Me ended -->
+  <!-- footer -->
+  <footer>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex justify-between items-start">
+        <span class="text-white text-[26px] font-bold">Zeresenay <span class="text-primary">.</span></span>
+        <div class="links w-full mt-10 md:mt-0 space-y-5 md:w-96 justify-between md:space-y-0 md:flex">
+          <div class="info">
+            <h6 class="text-xl text-white font-semibold mb-6">Information</h6>
+            <ul class="text-gray-500 space-y-3">
+              <li class="hover:underline"><a href="#">+251991157676</a></li>
+              <li class="hover:underline">
+                <a href="https://mail.google.com" id="mail" target="_blank">zeresenayyaregal4@gmail.com</a>
+              </li>
+              <li class="hover:underline">
+                <a href="https://www.bing.com/maps?q=addis+ababa+map&FORM=HDRSC6" target="_blank">Addis Ababa,
+                  Ethiopia</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social">
+            <h6 class="text-xl text-white font-semibold mb-6">
+              Social Media
+            </h6>
+            <ul class="text-gray-500 space-y-3">
+              <li class="hover:underline">
+                <a href="https://www.linkedin.com/in/zeresenay-yaregal-287aab2a2/" target="_blank">Linkedin</a>
+              </li>
+              <li class="hover:underline">
+                <a href="https://github.com/Zeresenayaregal" target="_blank">GitHub</a>
+              </li>
+              <li class="hover:underline">
+                <a href="https://twitter.com/Zeresenay_Y" target="_blank">Twitter</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <hr class="h-[2px] w-full bg-light-dark mt-16" />
-        <div class="flex mt-5 mb-8 justify-between items-start text-white">
-          <small
-            >Designed and developed by
-            <span class="text-primary">Zeresenay</span></small
-          >
-          <small>Copyright &copy; 2024</small>
-        </div>
       </div>
-    </footer>
-    <!-- footer ended -->
-    <!-- typed js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var mobileMenuBtn = document.getElementById("mobile-menu-btn");
-        var mobileMenu = document.getElementById("mobile-menu");
+      <hr class="h-[2px] w-full bg-light-dark mt-16" />
+      <div class="flex mt-5 mb-8 justify-between items-start text-white">
+        <small>Designed and developed by
+          <span class="text-primary">Zeresenay</span></small>
+        <small>Copyright &copy; 2024</small>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ended -->
+  <!-- typed js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      var mobileMenu = document.getElementById("mobile-menu");
 
-        mobileMenuBtn.addEventListener("click", function () {
-          if (mobileMenu.style.display === "none") {
-            mobileMenu.style.display = "block";
-            mobileMenuBtn.innerHTML = `
+      mobileMenuBtn.addEventListener("click", function () {
+        if (mobileMenu.style.display === "none") {
+          mobileMenu.style.display = "block";
+          mobileMenuBtn.innerHTML = `
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
       </svg>
                   `;
-          } else {
-            mobileMenu.style.display = "none";
-            mobileMenuBtn.innerHTML = `
+        } else {
+          mobileMenu.style.display = "none";
+          mobileMenuBtn.innerHTML = `
             <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -505,22 +349,23 @@
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   />
                 </svg>  `;
-          }
-        });
+        }
       });
-    </script>
-    <script>
-      var typed = new Typed("#typed", {
-        strings: [
-          "Full Stack Developer",
-          "Web Designer",
-          "UI/UX Designer",
-          "Software Engineer",
-        ],
-        typeSpeed: 80,
-        backSpeed: 80,
-        loop: Infinity,
-      });
-    </script>
-  </body>
+    });
+  </script>
+  <script>
+    var typed = new Typed("#typed", {
+      strings: [
+        "Full Stack Developer",
+        "Web Designer",
+        "UI/UX Designer",
+        "Software Engineer",
+      ],
+      typeSpeed: 80,
+      backSpeed: 80,
+      loop: Infinity,
+    });
+  </script>
+</body>
+
 </html>
